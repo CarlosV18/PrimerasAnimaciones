@@ -36,7 +36,7 @@ public class FuegoAnimado extends Actor {
             dibujo_actual=0;
         }
         llamadas_act++;
-        this.setX(this.getX() + 1);
+        fuego.get(dibujo_actual).moveBy(-1,-1);
     }
 
     @Override

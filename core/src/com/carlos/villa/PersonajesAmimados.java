@@ -39,6 +39,7 @@ public class PersonajesAmimados extends Actor{
             dibujo_actual=0;
         }
         llamadas_act++;
+        images.get(dibujo_actual).moveBy(1,0);
 
     }
 
@@ -46,6 +47,6 @@ public class PersonajesAmimados extends Actor{
     public void draw(Batch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
         images.get(dibujo_actual).draw(batch,parentAlpha);
-        this.setX(this.getX() + 1);
+
     }
 }
